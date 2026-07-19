@@ -1,0 +1,19 @@
+<body>
+    <button onclick="openGame()">Launch Unblocked</button>
+
+    <script>
+    function openGame() {
+        var win = window.open();
+        var url = "https://crazygames.com"; // Put your .com site here
+        win.document.body.style.margin = "0";
+        win.document.body.style.height = "100vh";
+        var iframe = win.document.createElement('iframe');
+        iframe.style.border = "none";
+        iframe.style.width = "100%";
+        iframe.style.height = "100%";
+        iframe.style.margin = "0";
+        iframe.src = url;
+        win.document.body.appendChild(iframe);
+    }
+    </script>
+</body>
